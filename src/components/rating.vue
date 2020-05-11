@@ -5,18 +5,29 @@
 </template>
 
 <script>
+import imdb from '../assets/IMDB.svg';
+import rottentomatoes from '../assets/tomatometer.svg';
+import metacritic from '../assets/Metacritic.svg';
+
 export default {
     name: 'rating',
     props: [ 'rating', 'icon' ],
+    data() {
+        return {
+            imdb: imdb,
+            rottentomatoes: rottentomatoes,
+            metacritic: metacritic
+        }
+    },
     methods: {
         // use this function to dynamically render the correct icon
         findIcon(source) {
             if (source === "Internet Movie Database") {
-                return 'IMDB.svg'
+                return this.imdb;
             } else if (source === "Rotten Tomatoes") {
-                return 'tomatometer.svg'
+                return this.rottentomatoes
             } else {
-                return 'Metacritic.svg'
+                return this.metacritic
             }
         }
     }
