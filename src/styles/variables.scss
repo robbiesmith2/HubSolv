@@ -1,0 +1,15 @@
+// set colour variables here
+
+$background-color: #ecf0f1;
+$border-color: #1abc9c;
+$text-color: #2c3e50;
+$link-color: #9b59b6;
+$link-color-hover: darken($color: $link-color, $amount: 15%);
+$button-color: $link-color;
+$button-color-hover: $link-color-hover;
+$error: red;
+$section-border: #95a5a6;
+$section-bg: #bdc3c7;
+$h1-color: #e67e22;
+
+// any other variables can also be set here such as font sizes, margins, layouts etc.
